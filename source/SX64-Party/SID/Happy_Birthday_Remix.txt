@@ -1,0 +1,23 @@
+	Title				Happy Birthday Remix
+	Author				Reyn Ouwehand
+	Released			1988 The Ruling Company
+                    	
+	Source				*=$1800-$7e incbin bla.sid
+                    	
+	Load Address   		$1800
+	Number of tunes		1
+	Init Address		$1800
+	Default tune		1
+	Play Address		$1806
+	Speed				$00000000
+                    	
+	SID Model			6581
+	Clock				PAL 
+                    	
+	File Format			PSID
+	BASIC				false
+	Format Version		2
+	PlaySID Specific	false
+
+	Free Pages			Auto Detected
+	MD5					a2100f0fca6824f0ba14bf6672737b9a
