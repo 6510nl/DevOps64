@@ -81,7 +81,7 @@ Insert the SD card into the Raspberry Pi and power the Pi up.
 
 Log on using a SSH client and execute the following commands to upgrade the freshly installed image
 
-    sudo apt update && sudo apt sudo apt --yes full-upgrade
+    sudo apt update && sudo apt --yes full-upgrade
 
 ---
 
