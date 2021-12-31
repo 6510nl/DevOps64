@@ -115,8 +115,5 @@ jobs:
         # Deploy the assembled .prg binary to the Ultimate device using 1541u2.pl
       - name: Deploy .PRG to Ultimate devices
         continue-on-error: true
-        run: | 
-          perl $RUNNER_TOOL_CACHE/1541u2.pl ${{ steps.dotenv.outputs.c64_deployment_host00 }} -c run:$GITHUB_WORKSPACE/${{ steps.dotenv.outputs.c64_source_root }}/${{ steps.dotenv.outputs.c64_source_folder }}/${{ steps.dotenv.outputs.c64_destination_file }}
-          perl $RUNNER_TOOL_CACHE/1541u2.pl ${{ steps.dotenv.outputs.c64_deployment_host01 }} -c run:$GITHUB_WORKSPACE/${{ steps.dotenv.outputs.c64_source_root }}/${{ steps.dotenv.outputs.c64_source_folder }}/${{ steps.dotenv.outputs.c64_destination_file }}
-          perl $RUNNER_TOOL_CACHE/1541u2.pl ${{ steps.dotenv.outputs.c64_deployment_host02 }} -c run:$GITHUB_WORKSPACE/${{ steps.dotenv.outputs.c64_source_root }}/${{ steps.dotenv.outputs.c64_source_folder }}/${{ steps.dotenv.outputs.c64_destination_file }}
-          perl $RUNNER_TOOL_CACHE/1541u2.pl ${{ steps.dotenv.outputs.c64_deployment_host03 }} -c run:$GITHUB_WORKSPACE/${{ steps.dotenv.outputs.c64_source_root }}/${{ steps.dotenv.outputs.c64_source_folder }}/${{ steps.dotenv.outputs.c64_destination_file }}
+        run: perl $RUNNER_TOOL_CACHE/1541u2.pl ${{ steps.dotenv.outputs.c64_deployment_host00 }} -c run:$GITHUB_WORKSPACE/${{ steps.dotenv.outputs.c64_source_root }}/${{ steps.dotenv.outputs.c64_source_folder }}/${{ steps.dotenv.outputs.c64_destination_file }}
+      
