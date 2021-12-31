@@ -1,6 +1,6 @@
 # DevOps64
 
-Turning an Ultimate64 into a multi-platform DevOps-machine.
+Turning an Ultimate64 into a multi-platform DevOps machine.
 
 ---
 
@@ -19,7 +19,6 @@ Turning an Ultimate64 into a multi-platform DevOps-machine.
 
 # Software
 
-Manual installation required
 *   [Raspbian PI OS Lite](https://www.raspberrypi.com/software/)
 *   [GitHub repository](https://docs.github.com/en/repositories)
 *   [GitHub - self hosted runner](https://docs.github.com/en/actions/hosting-your-own-runners)
@@ -32,10 +31,9 @@ Manual installation required
 
 # Installing Raspberry Pi OS using the Raspberry PI Imager
 
-https://www.raspberrypi.com/software/
+The most convenient way of writing the RPi OS to a SD card is by using the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 
-
-While pressing  ```Ctrl+Shift+X``` the ```Advanced options```-menu appears. This allows you to configure the setttings prior to writing the image to the SD card.
+While pressing  ```Ctrl+Shift+X``` the ```Advanced options```-menu appears. This allows you to configure the settings before writing the image to a SD card.
 
 ---
 
@@ -75,12 +73,13 @@ Finally, save the file. If you're using TextEdit on Mac, you'll need to go to ``
 
 Place an empty file named ```ssh``` in the ```boot``` partition of the SD card.
 
+---
 
-## Configuring the self hosted runner on Raspberry Pi Zero 2 W
+## Configuring the self-hosted runner on Raspberry Pi Zero 2 W
 
 Insert the SD card into the Raspberry Pi and power the Pi up.
 
-Log on using SSH clinet and execute the following commands to upgrade the fresh installed image
+Log on using a SSH client and execute the following commands to upgrade the freshly installed image
 
     sudo apt update && sudo apt sudo apt --yes full-upgrade
 
@@ -88,9 +87,9 @@ Log on using SSH clinet and execute the following commands to upgrade the fresh 
 
 ## Install the GitHub Runner
 
-In order to install a `GitHub self hosted runner` you need to follow the [docs on Github](https://docs.github.com/en/actions/hosting-your-own-runners/adding-self-hosted-runners).
+To install a `GitHub self-hosted runner` you need to follow the [docs on Github](https://docs.github.com/en/actions/hosting-your-own-runners/adding-self-hosted-runners).
 
-*Please note*: The single core (Raspberry Pi Zero)[https://www.raspberrypi.com/products/raspberry-pi-zero/] renders a [`6312 Segmentation fault`](https://github.com/actions/runner/issues/688) error while running `config.sh` as the ARMv6 CPU isn't supported for the .NET components. 
+*Please note*: The single-core [Raspberry Pi Zero](https://www.raspberrypi.com/products/raspberry-pi-zero/) renders a [`6312 Segmentation fault`](https://github.com/actions/runner/issues/688) error while running `config.sh` as the ARMv6 CPU isn't supported for the .NET components. 
 
 ---
 
@@ -102,19 +101,19 @@ The runner can be installed as a service, as per documentation; [Configuring the
 
 ## Start the CI workflow
 
-When starting the CI workflow for the first time the workflow install the software prequisites. These prerwquisites are installed and cached on the SD card for future usage.
+When starting the CI workflow for the first time the workflow installs the software prerequisites. These files are installed and cached on the SD card for future usage.
 
 ---
 
-## Mounting the Raspberry Pi Zero W into the Ultimate64 casing
+## Mounting the Raspberry Pi Zero W into the Commodore 64 casing
 
 Mounting the RPi into the C64 case which sports the Ultimate64 has a few benefits;
 
 *   The RPi is only powered on when the Ultimate64 is powered on.
-*   Everthing inside the Commodore 64 case.
+*   Everything inside the Commodore 64 case.
 
 ---
 
 ## Configuring your environment
 
-The ```source/variables.env``` file contains all the variables you need to have a succesfull workflow run and targetting your Ultimate device.
+The ```source/variables.env``` file contains all the variables you need to have a successful workflow run and targetting your Ultimate device.
