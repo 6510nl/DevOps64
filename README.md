@@ -5,15 +5,18 @@ Turning an Ultimate64 into a multi-platform DevOps machine.
 ---
 
 # Hardware
-
-*   [Ultimate64](https://ultimate64.com/Ultimate64) or [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64) combined with a [1541U2(+) cartridge](https://ultimate64.com/Main_products)
+*   Stock hardware:
+    *   [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64)
+    *   1541 Ultimate2 or [1541 Ultimate 2+ cartridge](https://ultimate64.com/Main_products) cartridge
+*   [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) implementation of the C64:
+    *   [Ultimate64](https://ultimate64.com/Ultimate64)
 *   [Pi Zero 2 W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/)
 *   [USB cable, USB-A to Micro-B](https://en.wikipedia.org/wiki/USB)
 *   [Micro SD card, minimal 4GB](https://www.raspberrypi.com/documentation/computers/getting-started.html#sd-cards)
 
 *   Optional: [Waveshare 2.13" e-Paper Hat](https://www.waveshare.com/2.13inch-e-paper-hat-b.htm)
 
-![](images/Ultimate64_RPiZero2W.png)
+![Example setup using Ultimate 64](images/Ultimate64_RPiZero2W.png)
 
 ---
 
@@ -115,9 +118,9 @@ When starting the CI workflow for the first time the workflow installs the softw
 
 ---
 
-## Mounting the Raspberry Pi Zero W into the Commodore 64 casing
+## Mounting inside the Commodore 64 casing
 
-Mounting the RPi into the C64 case which sports the Ultimate64 has a few benefits;
+Combining and mounting the Raspberry Pi Zero W next to the Ultimate 64 into the Commodore 64 casing has a few benefits;
 
 *   The RPi is only powered on when the Ultimate64 is powered on.
 *   Everything inside the Commodore 64 case.
