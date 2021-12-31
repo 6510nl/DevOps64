@@ -105,7 +105,7 @@ Starting the service is easy
 
     sudo ./svc.sh start
 
-The runner can be installed as a service, as per documentation; [Configuring the self-hosted runner application as a service](https://docs.github.com/en/actions/hosting-your-own-runners/configuring-the-self-hosted-runner-application-as-a-service)
+For more information on the service, see; [Configuring the self-hosted runner application as a service](https://docs.github.com/en/actions/hosting-your-own-runners/configuring-the-self-hosted-runner-application-as-a-service)
 
 ---
 
