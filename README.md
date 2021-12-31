@@ -89,11 +89,21 @@ Log on using a SSH client and execute the following commands to upgrade the fres
 
 To install a `GitHub self-hosted runner` you need to follow the [docs on Github](https://docs.github.com/en/actions/hosting-your-own-runners/adding-self-hosted-runners).
 
+The default values can be set by pressing ```enter``` a few times.
+
 *Please note*: The single-core [Raspberry Pi Zero](https://www.raspberrypi.com/products/raspberry-pi-zero/) renders a [`6312 Segmentation fault`](https://github.com/actions/runner/issues/688) error while running `config.sh` as the ARMv6 CPU isn't supported for the .NET components. 
 
 ---
 
 ## Install the runner as a service
+
+To install the runner as a service you need to give the ```install``` parameter to the ```svc.sh``` command
+
+    sudo ./svc.sh install 
+
+Starting the service is easy
+
+    sudo ./svc.sh start
 
 The runner can be installed as a service, as per documentation; [Configuring the self-hosted runner application as a service](https://docs.github.com/en/actions/hosting-your-own-runners/configuring-the-self-hosted-runner-application-as-a-service)
 
