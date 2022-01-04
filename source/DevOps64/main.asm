@@ -12,7 +12,6 @@
 			{
 			lda #color
 			sta $d020
-
 			}
 		
 
@@ -133,7 +132,6 @@ OpenVerticalBorders:
 			nop
 			nop
 			nop
-
 			bne !-
 
 			lda #$1b
