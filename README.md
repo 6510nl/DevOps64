@@ -7,7 +7,8 @@ Turning an Ultimate64 into a multi-platform DevOps machine.
 # Hardware
 *   Stock hardware:
     *   [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64)
-    *   1541 Ultimate2 or [1541 Ultimate 2+ cartridge](https://ultimate64.com/Main_products) cartridge
+    *   1541 Ultimate2 or [1541 Ultimate 2+ cartridge](https://ultimate64.com/Main_products) cartridge, sporting firmware 3.x
+    *   USB2LAN adapter, based on the ASIX AX88772/-A/-B chip 
 *   [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) implementation of the C64:
     *   [Ultimate64](https://ultimate64.com/Ultimate64)
 *   [Pi Zero 2 W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/)
