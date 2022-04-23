@@ -35,6 +35,8 @@ Turning an Ultimate64 into a multi-platform DevOps machine.
 
 # Installing Raspberry Pi OS using the Raspberry PI Imager
 
+You can either use the 32-bit version or the 64-bit version of the Raspberry PI OS Lite. For the sake of the 64 theme I used the 64-bit version, which may not be the most efficiënt option.
+
 The most convenient way of writing the RPi OS to a SD card is by using the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 
 While pressing  ```Ctrl+Shift+X``` the ```Advanced options```-menu appears. This allows you to configure the settings before writing the image to a SD card.
