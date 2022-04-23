@@ -93,7 +93,7 @@ Log on using a SSH client and execute the following commands to upgrade the fres
 
 ## Install the GitHub Runner
 
-To install a `GitHub self-hosted runner` you need to follow the [docs on Github](https://docs.github.com/en/actions/hosting-your-own-runners/adding-self-hosted-runners).
+To install a `GitHub self-hosted runner` you need to follow the [docs on Github](https://docs.github.com/en/actions/hosting-your-own-runners/adding-self-hosted-runners). When running a 64-bit OS, make sure that you choose the ARM64 runner. 
 
 The default values can be set by pressing ```enter``` a few times.
 
