@@ -326,6 +326,16 @@ irq:
 !:			lda $d012
 			cmp #$fa
 			bne	!-
+			nop
+			nop
+			nop
+			nop
+			nop
+			nop
+			nop
+			nop
+			nop
+			
 //			:SetBorderColor(13)
 			jsr OpenVerticalBorders
 //			:SetBorderColor(1)
