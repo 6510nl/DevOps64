@@ -134,7 +134,14 @@ jobs:
           repository: berrydejager/e-Paper
           ref: master
           path: berrydejager/e-Paper
-
+  # This workflow contains a single job called "build"
+  e-paper:
+  
+    # The type of runner that the job will run on
+    runs-on: [self-hosted,opensource64]
+    
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
       # Display stats to e-Paper on RPIl
       - name: Display stats to e-Paper on RPI
         continue-on-error: true
