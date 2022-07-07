@@ -133,17 +133,8 @@ jobs:
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    
-      # When the script isn't cached yet, checkout repository: berrydejager/e-Paper
-      - name: Checkout - berrydejager/e-Paper
-        # if: steps.check_1541u2_pl.outputs.files_exists == 'false'
-        uses: actions/checkout@v2
-        with:
-          repository: berrydejager/e-Paper
-          ref: master
-          path: berrydejager/e-Paper
-    
+   
       # Display stats to e-Paper on RPIl
       - name: Display stats to e-Paper on RPI
         continue-on-error: true
-        run: python3 ./berrydejager/e-Paper/examples/u64.py
+        run: python3 ./source/e-Paper/script/u64.py
