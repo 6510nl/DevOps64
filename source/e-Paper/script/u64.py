@@ -43,7 +43,7 @@ try:
     drawblack = ImageDraw.Draw(HBlackimage)
     drawry = ImageDraw.Draw(HRYimage)
     drawblack.text((10, 0), 'https://opensource64.com/', font = font64, fill = 0)
-    drawblack.text((10, 16), 'DevOps64 demo', font = font64, fill = 0)
+    drawblack.text((10, 32), 'sid-potjes', font = font64, fill = 0)
     drawry.text((40, 96), '(O) Berry de Jager', font = font64, fill = 0)
     logging.info("Outputting images to display")
     epd.display(epd.getbuffer(HBlackimage), epd.getbuffer(HRYimage))
