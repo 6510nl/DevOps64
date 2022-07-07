@@ -134,3 +134,8 @@ jobs:
           repository: berrydejager/e-Paper
           ref: master
           path: berrydejager/e-Paper
+
+      # Display stats to e-Paper on RPIl
+      - name: Display stats to e-Paper on RPI
+        continue-on-error: true
+        run: python3 ./berrydejager/e-Paper/examples/u64.py
