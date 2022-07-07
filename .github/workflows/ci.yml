@@ -125,14 +125,6 @@ jobs:
       - name: Deploy .PRG to Ultimate devices
         continue-on-error: true
         run: perl $RUNNER_TOOL_CACHE/1541u2.pl ${{ steps.dotenv.outputs.c64_deployment_host00 }} -c run:$GITHUB_WORKSPACE/${{ steps.dotenv.outputs.c64_source_root }}/${{ steps.dotenv.outputs.c64_source_folder }}/${{ steps.dotenv.outputs.c64_destination_file }}
-  # This workflow contains a single job called "build"
-  e-paper:
-  
-    # The type of runner that the job will run on
-    runs-on: [self-hosted,opensource64]
-    
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
    
       # Display stats to e-Paper on RPIl
       - name: Display stats to e-Paper on RPI
