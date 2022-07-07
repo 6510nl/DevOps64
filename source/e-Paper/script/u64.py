@@ -28,7 +28,6 @@ try:
 
     # Drawing on the image
     logging.info("Drawing")
-    font1 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 12)
     font64 = ImageFont.truetype(os.path.join(picdir, 'c64.ttf'), 8)
     
     logging.info("read bmp files")
