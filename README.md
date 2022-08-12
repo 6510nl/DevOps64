@@ -35,7 +35,9 @@ Turning an Ultimate64 into a multi-platform DevOps machine.
 
 # Installing Raspberry Pi OS using the Raspberry PI Imager
 
-You can either use the 32-bit version or the 64-bit version of the Raspberry PI OS Lite. For the sake of the 64 theme I used the 64-bit version, which may not be the most efficiënt option.
+You need to use the [64-bit version of the Raspberry PI OS Lite](https://downloads.raspberrypi.org/raspios_lite_arm64/images/) on the ARMv7 Rpi otherwise the .NET the GitHub Action Runner won't install.
+
+Also the single-core [Raspberry Pi Zero](https://www.raspberrypi.com/products/raspberry-pi-zero/) renders a [`6312 Segmentation fault`](https://github.com/actions/runner/issues/688) error while running `config.sh` as the ARMv6 CPU isn't supported for the .NET components. 
 
 The most convenient way of writing the RPi OS to a SD card is by using the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 
@@ -93,11 +95,9 @@ Log on using a SSH client and execute the following commands to upgrade the fres
 
 ## Install the GitHub Runner
 
-To install a `GitHub self-hosted runner` you need to follow the [docs on Github](https://docs.github.com/en/actions/hosting-your-own-runners/adding-self-hosted-runners). When running a 64-bit OS, make sure that you choose the ARM64 runner. 
+To install a `GitHub self-hosted runner` you need to follow the [docs on Github](https://docs.github.com/en/actions/hosting-your-own-runners/adding-self-hosted-runners). As wyou are running a 64-bit OS, make sure that you choose the ARM64 runner. 
 
 The default values can be set by pressing ```enter``` a few times.
-
-*Please note*: The single-core [Raspberry Pi Zero](https://www.raspberrypi.com/products/raspberry-pi-zero/) renders a [`6312 Segmentation fault`](https://github.com/actions/runner/issues/688) error while running `config.sh` as the ARMv6 CPU isn't supported for the .NET components. 
 
 ---
 
