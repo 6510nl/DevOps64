@@ -51,7 +51,7 @@ Alternatively, you can also write some files to the OS manually after you have w
 
 ---
 
-### Confuguring WiFi 
+### Configuring WiFi 
 
 Add your ```wpa_supplicant.conf``` file to the ```boot``` partition of the already written 
 
