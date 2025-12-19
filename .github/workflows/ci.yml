@@ -79,7 +79,7 @@ jobs:
         continue-on-error: true
         id: cmd
         with:
-          run: dpkg -l openjdk-11-jre
+          run: dpkg -l openjdk-17-jre
 
       # When the Debian package tool returns no errors (this check can be made more robust) just print "Found openjdk-11-jre" to the console
       - run: |
@@ -89,8 +89,8 @@ jobs:
       # When the Debian package tool return an error it means that openjdk-11-jre isn't installed yet
       # Install the openjdk-11-jre using the apt tool
       - run: | 
-          echo Install openjdk-11-jre
-          sudo apt --yes install openjdk-11-jre
+          echo Install openjdk-17-jre
+          sudo apt --yes install openjdk-17-jre
         if: ${{ steps.cmd.outputs.stderr }}
        
       # Cross-compile the source file to a binairy .prg file using KickAss
